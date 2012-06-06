@@ -37,7 +37,7 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-					<li><a href="#">Add A Mate</a></li>
+					<li><a href="#addAMate" data-icon="plus">Add A Mate</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,17 +45,54 @@
 	
 	<!--Add Item Page-->
 	<div data-role="page" id="addAMate" data-add-back-btn="true">
-		<div data-role="header" data-position="fixed">
+		<div data-role="header" data-theme="e" data-position="fixed">
 			<h1>Add A Mate</h1>
 		</div>
 		<div data-role="content">
-			<p>Snarf</p>
+			<ul data-role="listview" data-filter="true"> 
+				<li data-role="list-divider">Friend Info</li>
+					<li>
+						<h3>Name<h3>
+						<input type="text" id="name" />
+					</li>	
+					<li>
+						<h3>Gender</h3>
+						<input type="radio" checked value="Female" id="female" name="gender" /><label for="female">Female</label>	
+						<input type="radio" value="Male" id="male" name="gender" /><label for="male">Male</label>
+						<input type="radio" value="Other" id="other" name="gender" /><label for="other">Other</label>
+						<input type="radio" value="None" id="none" name="gender" /><label for="none">None</label>
+					</li>
+					<li>
+						<h3>Date of Birth</h3>
+						<input type="date" id="born" />
+					</li>
+					<li>
+						<h3>Home Planet</h3>
+					</li>
+					<li>
+						<h3>Bio</h3>
+						<textarea id="bio">Type your mate's bio here...</textarea>
+					</li>
+				<li data-role="list-divider">Morality and Character</li>
+					<li>
+						<h3>Skills</h3>
+					</li>
+					<li>
+						<h3>Morality</h3>
+						<input type="range" id="morality" min="1" max="10" />
+					</li>
+					<li>
+						<h3>Character</h3>
+						<input type="range" id="character" min="1" max="10" />
+					</li>
+									
+			</ul>
 		</div>
 		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#" class="ui-btn-active" >Add A Mate</a></li>
+					<li><a href="#addAMate" data-icon="plus" class="ui-btn-active" >Add A Mate</a></li>
 				</ul>
 			</div>
 		</div>
