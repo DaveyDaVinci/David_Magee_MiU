@@ -1,13 +1,15 @@
+// write your javascript in here
+
 /*
 David Magee
-VFW 0512
-Project 3
+MiU 0612
+Project 2
 */
-
+//test
 window.addEventListener("DOMContentLoaded", function(){
 	
-	//This is the getelementbyid function.  use the $ symbol to run the function
-	function $(x){
+	//This is the getelementbyid function.  use the ce symbol to run the function
+	function ce(x){
 		var theElement = document.getElementById(x);
 		return theElement;
 	};
@@ -15,7 +17,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	//Adds options for planets
 	function listPlanets (){
 		var formTag = document.getElementsByTagName("form"), //This is an array
-			selectLi = $('planets'),
+			selectLi = ce('planets'),
 			makeHomePlanet = document.createElement('select');
 			makeHomePlanet.setAttribute("id", "homeplanets");
 		for(i=0, j=homePlanets.length; i<j; i++){
@@ -33,7 +35,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	function listSkills (){
 		var formTag = document.getElementsByTagName("form"), //This is an array
-			selectLi = $('allskills'),
+			selectLi = ce('allskills'),
 			makeSkills = document.createElement('select');
 			makeSkills.setAttribute("id", "theskills");
 		for(i=0, j=skillOptions.length; i<j; i++){
@@ -63,7 +65,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	
 	//variable for errors shortcut below
-	var  errMsg = $('errors');
+	var  errMsg = ce('errors');
 	//call to listskills function
 	listSkills();	
 	
@@ -81,8 +83,8 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 	/* This is an example of if a check boxed was checked.  Note the if and else.
 	function getGenderValue(){
-		if($('checkboxIdHere').checked){
-			valueInStoredObject = $('checkBoxIdHere').value;
+		if(ce('checkboxIdHere').checked){
+			valueInStoredObject = ce('checkBoxIdHere').value;
 		}else{
 			valueInStoredObject = "No"
 		};
@@ -98,17 +100,17 @@ window.addEventListener("DOMContentLoaded", function(){
 	function toggleControls(n){
 			switch(n){
 				case "on":
-					$('profileForm').style.display = "none"; //NEED PROPER TAG
-					$('cleardata').style.display = "inline"; //NEED PROPER TAG
-					$('displaydata').style.display = "none";
-					$('newdata').style.display = "inline";
+					ce('profileForm').style.display = "none"; //NEED PROPER TAG
+					ce('cleardata').style.display = "inline"; //NEED PROPER TAG
+					ce('displaydata').style.display = "none";
+					ce('newdata').style.display = "inline";
 					break; 
 				case "off":
-					$('profileForm').style.display = "block";
-					$('cleardata').style.display = "inline"; 
-					$('displaydata').style.display = "inline";
-					$('newdata').style.display = "none";
-					$('info').style.display = "none";
+					ce('profileForm').style.display = "block";
+					ce('cleardata').style.display = "inline"; 
+					ce('displaydata').style.display = "inline";
+					ce('newdata').style.display = "none";
+					ce('info').style.display = "none";
 					break;
 				default:
 					return false;
@@ -128,13 +130,13 @@ window.addEventListener("DOMContentLoaded", function(){
 		//Object properties contain array with the form label and input values.
 		getGender();
 		var item				= {};
-		item.planet				= ["Home Planet: ", $('homeplanets').value];
-		item.skill				= ["Skill: ", $('theskills').value];
-		item.name				= ["Name: ", $('name').value];
-		item.born				= ["Born: ", $('born').value];
-		item.morality			= ["Morality: ", $('morality').value];
-		item.character			= ["Character: ", $('character').value];
-		item.bio				= ["Bio: ", $('bio').value];
+		item.planet				= ["Home Planet: ", ce('homeplanets').value];
+		item.skill				= ["Skill: ", ce('theskills').value];
+		item.name				= ["Name: ", ce('name').value];
+		item.born				= ["Born: ", ce('born').value];
+		item.morality			= ["Morality: ", ce('morality').value];
+		item.character			= ["Character: ", ce('character').value];
+		item.bio				= ["Bio: ", ce('bio').value];
 		item.gender				= ["Gender: ", genderValue ];
 		//Save data into local storage: use Stringify to convert our object to a string.
 		localStorage.setItem(id, JSON.stringify(item));
@@ -156,7 +158,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var makeList = document.createElement('ul');
 		createDiv.appendChild(makeList);
 		document.body.appendChild(createDiv);
-		$('info').style.display = "display";
+		ce('info').style.display = "display";
 		for(i=0, j=localStorage.length; i<j; i++){
 			var makeli = document.createElement('li');
 			var linksLi = document.createElement('li');
@@ -235,13 +237,13 @@ window.addEventListener("DOMContentLoaded", function(){
 		//populate form fields with current localStorage values
 		
 	
-		$('homeplanets').value = item.planet[1];
-		$('theskills').value = item.skill[1];
-		$('name').value = item.name[1];
-		$('born').value = item.born[1];
-		$('morality').value = item.morality[1];
-		$('character').value = item.character[1];
-		$('bio').value = item.bio[1];
+		ce('homeplanets').value = item.planet[1];
+		ce('theskills').value = item.skill[1];
+		ce('name').value = item.name[1];
+		ce('born').value = item.born[1];
+		ce('morality').value = item.morality[1];
+		ce('character').value = item.character[1];
+		ce('bio').value = item.bio[1];
 		var radios = document.forms[0].gender;
 			for (var i=0; i<radios.length; i++){
 				if(radios[i].value == "Male" && item.gender[1] == "Male"){
@@ -257,8 +259,8 @@ window.addEventListener("DOMContentLoaded", function(){
 		//Removes the initial listener from the save contact button so it won't make a new group
 		saveLink.removeEventListener("click", saveData);
 		//Then we want to change the submit button value to edit button
-		$('savedata').value = "Edit Profile";
-		var editSubmit = $('savedata');
+		ce('savedata').value = "Edit Profile";
+		var editSubmit = ce('savedata');
 		// Saves the key, value pair established in the function as a property of the edit submit event
 		// so we can use that value when we save the data we edited. 
 		editSubmit.addEventListener("click", validate);
@@ -267,7 +269,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			}
 		/* Checks for checkbox
 		if(obj.favorite[1] == "Yes") {
-			$('fav').setAttribute("checked", checked");
+			ce('fav').setAttribute("checked", checked");
 		}
 		*/
 		
@@ -298,14 +300,14 @@ window.addEventListener("DOMContentLoaded", function(){
 	//This is a function that validates data in form fields
 	function validate(e){
 		//define the elements we want to check
-		var getPlanet =     $('homeplanets');
-		var getSkills =		$('theskills');
-		var getName =     	$('name');
-		var getBorn =		$('born');
-		var getMorality = 	$('morality');
-		var getCharacter = 	$('character');
-		var getBio = 		$('bio');
-		var getGender = 	$(genderValue);
+		var getPlanet =     ce('homeplanets');
+		var getSkills =		ce('theskills');
+		var getName =     	ce('name');
+		var getBorn =		ce('born');
+		var getMorality = 	ce('morality');
+		var getCharacter = 	ce('character');
+		var getBio = 		ce('bio');
+		var getGender = 	ce(genderValue);
 		
 		errMsg.innerHTML = "";
 		getPlanet.style.border = "1px solid black";
@@ -343,7 +345,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		}
 		
 		/* email validation which I won't use
-		var re = /^\w+([\.-]?\w+)*@\w+([\.-]?/w+)*(\.\w{2,3})+$/;
+		var re = /^\w+([\.-]?\w+)*@\w+([\.-]?/w+)*(\.\w{2,3})+ce/;
 		if (!(re.exec.getEmail.value)){
 			var emailError = "Please enter a valid email address.";
 			itemKey.style.border = "1px solid red";
@@ -369,11 +371,11 @@ window.addEventListener("DOMContentLoaded", function(){
 		
 	
 	//Button Presses	
-	var displayLink = $('displaydata'); 
+	var displayLink = ce('displaydata'); 
 	displayLink.addEventListener("click", getData);
-	var clearLink = $('cleardata');
+	var clearLink = ce('cleardata');
 	clearLink.addEventListener("click", clearData);
-	var saveLink =  $('savedata');
+	var saveLink =  ce('savedata');
 	saveLink.addEventListener("click", validate); 
 
 });

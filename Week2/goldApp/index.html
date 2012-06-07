@@ -1,0 +1,147 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Sci-Fi Your Mates</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	<!--Home Page-->
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
+		</div>
+		<div>
+			<center><h1><img src="img/centerStage.png" alt="Center Stage" height="175" width="300" /></h1></center>
+		</div>
+		<div data-role="content">
+			<p><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="e">Add A Mate</a></p>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Browse</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Planet</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Skill</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Gender</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Morality</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Character</h3>
+				</a></li>
+				<li data-role="list-divider">View Pics and Bios</li>
+				<li><a href="#viewplanets" data-icon="arrow-r" data-iconpos="right">
+					<h3>View Planets</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>View Skills</h3>
+				</a></li>
+				<li data-role="list-divider">Other Profile Options</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>View Most Recent Logins</h3>
+				</a></li>
+			</ul>
+		</div>
+		
+		
+		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search">View Planets</a></li>
+					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">Bronze App</a></li>
+					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--View Planest Page-->
+	<div data-role="page" id="viewplanets">
+		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
+			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
+			<center><h3>View Planets</h3></center>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Planets</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Pluto.png" />
+					<h3>Pluto</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Mars.png" />
+					<h3>Mars</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Earth.png" />
+					<h3>Earth</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Vegas.png" />
+					<h3>Vegas</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Velarius.png" />
+					<h3>Velarius</h3>
+				</a></li>
+				<li><a href="#viewplanets" data-icon="arrow-r" data-iconpos="right">
+					<img src="img/Heisinkr.png" />
+					<h3>Heisinkr</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Turos.png" />
+					<h3>Turos</h3>
+				</a></li>
+			</ul>
+		</div>
+		
+		
+		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search" class="ui-btn-active">View Planets</a></li>
+					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">Bronze App</a></li>
+					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		
+	
+	
+
+	
+
+	<!-- JavaScript under here -->
+	
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
