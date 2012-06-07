@@ -1,3 +1,4 @@
+//David Magee MIU 0612
 var json = {
 	"profile1": {
 		"planet": ["Planet:", "Earth"],

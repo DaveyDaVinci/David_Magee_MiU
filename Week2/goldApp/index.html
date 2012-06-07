@@ -24,43 +24,50 @@
 </head>
 <body>
 	<!--Home Page-->
-	<div data-role="page" id="home" data-theme="c">
-		<div data-role="header" data-position="fixed" data-theme="c">
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed" data-theme="b">
 			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
 		</div>
 		<div>
 			<center><h1><img src="img/centerStage.png" alt="Center Stage" height="175" width="300" /></h1></center>
 		</div>
-		
 		<div data-role="content">
-			<h2><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Add A Mate</a></h2>
-			
-			<div data-role="collapsible-set">
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="e">
-					<h3>Browse</h3>
-					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Planet</a></p>
-					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Gender</a></p>
-					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Skills</a></p>
-					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Morality</a></p>
-					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Character</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="e">
-					<h3>View Planets and Bios</h3>
-					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">View Planets</a></p>
-				</div>
-				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="e">
-					<h3>Other Profile Options</h3>
-					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">View Most Recent Login</a></p>
-				</div>
-				
-					
-					
-		
-			</div>
+			<p><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="e">Add A Mate</a></p>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Browse</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Planet</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Skill</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Gender</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Morality</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Character</h3>
+				</a></li>
+				<li data-role="list-divider">View Pics and Bios</li>
+				<li><a href="#viewplanets" data-icon="arrow-r" data-iconpos="right">
+					<h3>View Planets</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>View Skills</h3>
+				</a></li>
+				<li data-role="list-divider">Other Profile Options</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>View Most Recent Logins</h3>
+				</a></li>
+			</ul>
 		</div>
 		
 		
-		<div data-role="footer" data-theme="a" data-position="fixed" data-id="freeze">
+		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
