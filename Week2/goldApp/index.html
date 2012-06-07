@@ -71,6 +71,7 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search">View Planets</a></li>
 					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">Bronze App</a></li>
 					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
 				</ul>
@@ -80,21 +81,57 @@
 	
 	<!--View Planest Page-->
 	<div data-role="page" id="viewplanets">
-		<div data-role="header" data-position="fixed" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
 			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
 			<center><h3>View Planets</h3></center>
+		</div>
+		
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Planets</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Pluto.png" />
+					<h3>Pluto</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Mars.png" />
+					<h3>Mars</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Earth.png" />
+					<h3>Earth</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Vegas.png" />
+					<h3>Vegas</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Velarius.png" />
+					<h3>Velarius</h3>
+				</a></li>
+				<li><a href="#viewplanets" data-icon="arrow-r" data-iconpos="right">
+					<img src="img/Heisinkr.png" />
+					<h3>Heisinkr</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Turos.png" />
+					<h3>Turos</h3>
+				</a></li>
+			</ul>
 		</div>
 		
 		
 		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
 			<div data-role="navbar">
 				<ul>
-					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search" class="ui-btn-active">View Planets</a></li>
 					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">Bronze App</a></li>
 					<li><a href="underConstruction.html" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
 				</ul>
 			</div>
 		</div>
+	</div>
 		
 	
 	
