@@ -139,6 +139,39 @@
 			<h1>Add A Mate</h1>
 		</div>
 		<div data-role="content">
+			<form action="" method="post" id="addMateForm">
+				<ul id="errors"></ul>
+				<ul data-role="listview" data-inset="true" data-filter="true">
+					<li data-role="list-divider">Friend Info</li>
+					<li data-role="fieldcontain">
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name" />
+					</li>
+					
+					<li data-role="list-divider">Morality and Character</li>
+					<li data-role="fieldcontain">
+						<label for="morality">Morality:</label>
+						<input type="range" id="morality" min="1" max="10" value="5" />
+					<li data-role="fieldcontain">
+						<label for="character">Character:</label>
+						<input type="range" id="character" min="1" max="10" value="5" />
+						
+						
+					<li data-role="list-divider">About Mate</li>
+					<li data-role="fieldcontain">
+						<label for="bio">Bio:</label>
+						<textarea id="bio">Type your mate's bio here...</textarea>
+					</li>
+					
+				
+				</ul>
+			</form>
+		</div>
+	</div>
+		
+		
+		
+		<div data-role="content">
 			<form action="#" method="post" id="profileForm" />
 				<ul id="errors"></ul>
 				<ul data-role="listview" data-filter="true"> 
