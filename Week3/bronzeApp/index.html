@@ -1,0 +1,135 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Sci-Fi Your Mates</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	<!--Home Page-->
+	<div data-role="page" id="home" data-theme="c">
+		<div data-role="header" data-position="fixed" data-theme="c">
+			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
+		</div>
+		<div>
+			<center><h1><img src="img/centerStage.png" alt="Center Stage" height="175" width="300" /></h1></center>
+		</div>
+
+		<div data-role="content">
+			<h2><a href="additem.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Add A Mate</a></h2>
+
+			<div data-role="collapsible-set" data-filter="true">
+				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="e">
+					<h3>Browse</h3>
+					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Planet</a></p>
+					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Gender</a></p>
+					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Skills</a></p>
+					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Morality</a></p>
+					<p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Browse By Character</a></p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="e">
+					<h3>View Planets and Bios</h3>
+					<div class="ui-grid-b">
+						<div class="ui-block-a" style="height:70px">
+							<a href="underConstruction.html" data-ajax="false"><img src="img/Mars.png" alt="Mars" /></a>
+						</div>
+						<div class="ui-block-b" style="height:70px">
+							<a href="underConstruction.html" data-ajax="false"><img src="img/Earth.png" alt="Mars" /></a>
+						</div>
+						<div class="ui-block-c" style="height:70px">
+							<a href="underConstruction.html" data-ajax="false"><img src="img/Pluto.png" alt="Mars" /></a>
+						</div>
+						<div class="ui-block-a" style="height:70px">
+							<a href="underConstruction.html" data-ajax="false"><img src="img/Vegas.png" alt="Mars" /></a>
+						</div>
+						<div class="ui-block-b" style="height:70px">
+							<a href="underConstruction.html" data-ajax="false"><img src="img/Heisinkr.png" alt="Mars" /></a>
+						</div>
+						<div class="ui-block-c" style="height:70px">
+							<a href="underConstruction.html" data-ajax="false"><img src="img/Turos.png" alt="Mars" /></a>
+						</div>
+						<div class="ui-block-a" style="height:70px">
+							<a href="underConstruction.html" data-ajax="false"><img src="img/Velarius.png" alt="Mars" /></a>
+						</div>
+					</div>
+				</div>
+				<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="e">
+					<h3>Other Profile Options</h3>
+					<div data-role="collapsible" data-collapsed="true" data-theme="b" data-content-theme="e">
+						<h3>View Newest Profiles</h3>
+						<div class="ui-grid-b">
+							<div class="ui-block-a" style="width:110px">
+								<p>7-7-2012</p>
+							</div>
+							<div class="ui-block-b" style="width:150px">
+								<p>Harva Singora</p>
+							</div>
+							<div class="ui-block-b" style="width:30px">
+								<p>Female</p>
+							</div>
+							<div class="ui-block-a" style="width:110px">
+								<p>7-5-2012</p>
+							</div>
+							<div class="ui-block-b" style="width:150px">
+								<p>Aleeki</p>
+							</div>
+							<div class="ui-block-b" style="width:30px">
+								<p>Male</p>
+							</div>
+							<div class="ui-block-a" style="width:110px">
+								<p>7-3-2012</p>
+							</div>
+							<div class="ui-block-b" style="width:150px">
+								<p>Kahleesi</p>
+							</div>
+							<div class="ui-block-b" style="width:30px">
+								<p>Female</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div data-role="footer" data-theme="a" data-position="fixed" data-id="freeze">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/goldApp/index.html" data-icon="arrow-r" data-ajax="false">Gold App</a></li>
+					<li><a href="https://github.com/DaveyDaVinci/David_Magee_MiU/tree/gh-pages" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<!-- JavaScript under here <p><a href="underConstruction.html" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">View Planets</a></p>-->
+
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
