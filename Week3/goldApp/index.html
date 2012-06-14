@@ -147,7 +147,54 @@
 						<label for="name">Name:</label>
 						<input type="text" name="name" id="name" />
 					</li>
-					
+					<li data-role="fieldcontain">
+						<fieldset data-role="controlgroup">
+							<legend>Gender:</legend>
+								<input type="radio" checked value="Female" id="female" name="gender" /><label for="female">Female</label>	
+								<input type="radio" value="Male" id="male" name="gender" /><label for="male">Male</label>
+								<input type="radio" value="Other" id="other" name="gender" /><label for="other">Other</label>
+								<input type="radio" value="None" id="none" name="gender" /><label for="none">None</label>						
+						</fieldset>
+					</li>
+					<li data-role="fieldcontain">
+   						<label for="homePlanet" class="select">Home Planet:</label>
+   						<select name="homePlanet" id="homePlanet">
+     						<option value="alliedGroup" disabled="disabled">Allied Planets</option>
+      						<option value="Earth">Earth</option>
+      						<option value="Mars">Mars</option>
+      						<option value="Pluto">Pluto</option>
+      						<option value="Vegas">Vegas</option>
+      						<option value="relkinGroup" disabled="disabled">Relkin Group</option>
+      						<option value="Heisinkr">Heisinkr</option>
+      						<option value="Turos">Turos</option>
+      						<option value="Velarius">Velarius</option>
+      					</select>
+					</li>
+					<li data-role="fieldcontain">
+   						<label for="skills" class="select">Skill:</label>
+   						<select name="skills" id="skills">
+     						<option value="fightingSkills" disabled="disabled">Fighting Skills</option>
+      						<option value="Swordsman">Swordsman</option>
+      						<option value="Smasher">Smasher</option>
+      						<option value="Boxer">Boxer</option>
+      						<option value="shootingSkills" disabled="disabled">Shooting Skills</option>
+      						<option value="Gunner">Gunner</option>
+      						<option value="Sniper">Sniper</option>
+      						<option value="Tank">Tank</option>
+      						<option value="thievingSkills" disabled="disabled">Thieving Skills</option>
+      						<option value="Thief">Thief</option>
+      						<option value="Charmer">Charmer</option>
+      						<option value="Assassin">Assassin</option>
+      						<option value="sorcerySkills" disabled="disabled">Sorcery Skills</option>
+      						<option value="Mage">Mage</option>
+      						<option value="Wizard">Wizard</option>
+      						<option value="Shaman">Shaman</option>
+      						<option value="techsterSkills" disabled="disabled">Techster Skills</option>
+      						<option value="Hacker">Hacker</option>
+      						<option value="Biotic">Biotic</option>
+      						<option value="Anarchist">Anarchist</option>
+      					</select>
+					</li>
 					<li data-role="list-divider">Morality and Character</li>
 					<li data-role="fieldcontain">
 						<label for="morality">Morality:</label>
@@ -155,20 +202,57 @@
 					<li data-role="fieldcontain">
 						<label for="character">Character:</label>
 						<input type="range" id="character" min="1" max="10" value="5" />
-						
-						
 					<li data-role="list-divider">About Mate</li>
-					<li data-role="fieldcontain">
-						<label for="bio">Bio:</label>
-						<textarea id="bio">Type your mate's bio here...</textarea>
-					</li>
+						<li data-role="fieldcontain">
+							<label for="bio">Bio:</label>
+							<textarea id="bio">Type your mate's bio here...</textarea>
+						</li>
 					
 				
 				</ul>
+				
+				<div data-role="fieldcontain">
+				<h3><input type="submit" id="savedata" value="Save Mate" data-icon="plus" data-iconpos="right" /></h3>
+			</div>
+			
+				<a href="#recordErrors" id="amformErrorsLink" data-rel="dialog" data-transition="pop">Open Errors</a>
 			</form>
 		</div>
-	</div>
 		
+		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search">View <br/>Planets</a></li>
+					<li><a href="#addAMate" data-icon="plus" class="ui-btn-active">Add A Mate</a></li>
+					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze <br/>App</a></li>
+					<li><a href="https://github.com/DaveyDaVinci/David_Magee_MiU/tree/gh-pages/Week2" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
+				</ul>
+			</div>
+		</div>
+	
+	</div>
+	
+	<!--errors page-->
+	
+	<div data-role="dialog" id="recordErrors">
+		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
+			
+			<center><h3>Missing Fields</h3></center>
+		</div>
+		
+		<div data-role="content">
+			<ul>
+				
+			</ul>
+		
+		</div>
+	</div>
+
+		
+		
+		
+		<!--old code
 		
 		
 		<div data-role="content">
@@ -233,6 +317,8 @@
 			</div>
 		</div>
 	</div>
+	
+	-->
 
 
 
