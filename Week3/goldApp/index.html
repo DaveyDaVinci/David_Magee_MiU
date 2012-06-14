@@ -71,8 +71,9 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-					<li><a href="#viewplanets" data-icon="search">View Planets</a></li>
-					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze App</a></li>
+					<li><a href="#viewplanets" data-icon="search" >View <br/>Planets</a></li>
+					<li><a href="#addAMate" data-icon="plus" >Add A Mate</a></li>
+					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze <br/>App</a></li>
 					<li><a href="https://github.com/DaveyDaVinci/David_Magee_MiU/tree/gh-pages/Week2" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
 				</ul>
 			</div>
@@ -82,7 +83,7 @@
 	<!--View Planest Page Test--> 
 	<div data-role="page" id="viewplanets">
 		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
-			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
+			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
 			<center><h3>View Planets</h3></center>
 		</div>
 
@@ -125,8 +126,9 @@
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
-					<li><a href="#viewplanets" data-icon="search" class="ui-btn-active">View Planets</a></li>
-					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze App</a></li>
+					<li><a href="#viewplanets" data-icon="search" class="ui-btn-active">View <br/>Planets</a></li>
+					<li><a href="#addAMate" data-icon="plus" >Add A Mate</a></li>
+					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze <br/>App</a></li>
 					<li><a href="https://github.com/DaveyDaVinci/David_Magee_MiU/tree/gh-pages/Week2" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
 				</ul>
 			</div>
@@ -134,88 +136,120 @@
 	</div>
 	
 	<!--Add Item Page-->
-	<div data-role="page" id="addAMate" data-add-back-btn="true">
-		<div data-role="header" data-theme="e" data-position="fixed">
-			<h1>Add A Mate</h1>
+	<div data-role="page" id="addAMate">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
+			<h3>Add A Mate</h3>
 		</div>
 		<div data-role="content">
 			<form action="" method="post" id="addMateForm">
-				<ul id="errors"></ul>
-				<ul data-role="listview" data-inset="true" data-filter="true">
-					<li data-role="list-divider">Friend Info</li>
-					<li data-role="fieldcontain">
-						<label for="name">Name:</label>
-						<input type="text" name="name" id="name" />
-					</li>
-					<li data-role="fieldcontain">
-						<fieldset data-role="controlgroup">
+				
+				<div data-role="fieldcontain">
+					<input type="submit" value="Save Mate" data-theme="e" data-icon="plus" data-iconpos="right" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<center><h3>Friend Info</h3></center>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup" >
 							<legend>Gender:</legend>
 								<input type="radio" checked value="Female" id="female" name="gender" /><label for="female">Female</label>	
 								<input type="radio" value="Male" id="male" name="gender" /><label for="male">Male</label>
 								<input type="radio" value="Other" id="other" name="gender" /><label for="other">Other</label>
 								<input type="radio" value="None" id="none" name="gender" /><label for="none">None</label>						
 						</fieldset>
-					</li>
-					<li data-role="fieldcontain">
-   						<label for="homePlanet" class="select">Home Planet:</label>
-   						<select name="homePlanet" id="homePlanet">
-     						<option value="alliedGroup" disabled="disabled">Allied Planets</option>
-      						<option value="Earth">Earth</option>
-      						<option value="Mars">Mars</option>
-      						<option value="Pluto">Pluto</option>
-      						<option value="Vegas">Vegas</option>
-      						<option value="relkinGroup" disabled="disabled">Relkin Group</option>
-      						<option value="Heisinkr">Heisinkr</option>
-      						<option value="Turos">Turos</option>
-      						<option value="Velarius">Velarius</option>
-      					</select>
-					</li>
-					<li data-role="fieldcontain">
-   						<label for="skills" class="select">Skill:</label>
-   						<select name="skills" id="skills">
-     						<option value="fightingSkills" disabled="disabled">Fighting Skills</option>
-      						<option value="Swordsman">Swordsman</option>
-      						<option value="Smasher">Smasher</option>
-      						<option value="Boxer">Boxer</option>
-      						<option value="shootingSkills" disabled="disabled">Shooting Skills</option>
-      						<option value="Gunner">Gunner</option>
-      						<option value="Sniper">Sniper</option>
-      						<option value="Tank">Tank</option>
-      						<option value="thievingSkills" disabled="disabled">Thieving Skills</option>
-      						<option value="Thief">Thief</option>
-      						<option value="Charmer">Charmer</option>
-      						<option value="Assassin">Assassin</option>
-      						<option value="sorcerySkills" disabled="disabled">Sorcery Skills</option>
-      						<option value="Mage">Mage</option>
-      						<option value="Wizard">Wizard</option>
-      						<option value="Shaman">Shaman</option>
-      						<option value="techsterSkills" disabled="disabled">Techster Skills</option>
-      						<option value="Hacker">Hacker</option>
-      						<option value="Biotic">Biotic</option>
-      						<option value="Anarchist">Anarchist</option>
-      					</select>
-					</li>
-					<li data-role="list-divider">Morality and Character</li>
-					<li data-role="fieldcontain">
-						<label for="morality">Morality:</label>
-						<input type="range" id="morality" min="1" max="10" value="5" />
-					<li data-role="fieldcontain">
-						<label for="character">Character:</label>
-						<input type="range" id="character" min="1" max="10" value="5" />
-					<li data-role="list-divider">About Mate</li>
-						<li data-role="fieldcontain">
-							<label for="bio">Bio:</label>
-							<textarea id="bio">Type your mate's bio here...</textarea>
-						</li>
-					
-				
-				</ul>
+				</div>
 				
 				<div data-role="fieldcontain">
-				<h3><input type="submit" id="savedata" value="Save Mate" data-icon="plus" data-iconpos="right" /></h3>
-			</div>
-			
-				<a href="#recordErrors" id="amformErrorsLink" data-rel="dialog" data-transition="pop">Open Errors</a>
+					<label for="born">Date Of Birth:</label>
+					<input type="text" name="born" id="born" placeholder="MM/DD/YY" class="required date" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="homePlanet" class="select">Home Planet:</label>
+   						<select name="homePlanet" id="homePlanet" data-native-menu="false" data-theme="a">
+     						<option data-placeholder="true">Choose A Planet</option>
+      						<optgroup label="Allied Planets">
+      							<option value="Earth">Earth</option>
+      							<option value="Mars">Mars</option>
+      							<option value="Pluto">Pluto</option>
+      							<option value="Vegas">Vegas</option>
+      						</optgroup>
+      						<optgroup label="Relkin Group">
+      							<option value="Heisinkr">Heisinkr</option>
+      							<option value="Turos">Turos</option>
+      							<option value="Velarius">Velarius</option>
+      						</optgroup>
+      					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="skills" class="select">Skill:</label>
+   						<select name="skills" id="skills" data-native-menu="false" data-theme="a">
+     						<option data-placeholder="true">Choose a Skill</option>
+     						<optgroup label="Fighting Skills">
+     							<option value="Swordsman">Swordsman</option>
+      							<option value="Smasher">Smasher</option>
+      							<option value="Boxer">Boxer</option>
+      						</optgroup>
+      						<optgroup label="Shooting Skills">
+      							<option value="Gunner">Gunner</option>
+      							<option value="Sniper">Sniper</option>
+      							<option value="Tank">Tank</option>
+      						</optgroup>
+      						<optgroup label="Thieving Skills">
+      							<option value="Thief">Thief</option>
+      							<option value="Charmer">Charmer</option>
+      							<option value="Assassin">Assassin</option>
+      						</optgroup>
+      						<optgroup label="Sorcery Skills">
+      							<option value="Mage">Mage</option>
+      							<option value="Wizard">Wizard</option>
+      							<option value="Shaman">Shaman</option>
+      						</optgroup>
+      						<optgroup label="Techster Skills">
+      							<option value="Hacker">Hacker</option>
+      							<option value="Biotic">Biotic</option>
+      							<option value="Anarchist">Anarchist</option>
+      						</optgroup>
+      					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<center><h3>Morality and Character</h3></center>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="morality">Morality:</label>
+					<input type="range" id="morality" min="1" max="10" value="5" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="character">Character:</label>
+					<input type="range" id="character" min="1" max="10" value="5" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<center><h3>About Mate</h3></center>
+				</div>
+				
+				<div data-role="fieldcontain">
+						<label for="bio">Bio:</label>
+						<textarea name="bio" id="bio" placeholder="Enter your mate's info here..." class="required"></textarea>
+					</div>
+				
+				<div data-role="fieldcontain">
+					<input type="reset" value="Clear Data" data-theme="b" data-icon="delete" data-iconpos="right" />
+					<input type="submit" value="Save Mate" data-theme="e" data-icon="plus" data-iconpos="right" />
+				</div>
+				
 			</form>
 		</div>
 		
@@ -230,9 +264,16 @@
 				</ul>
 			</div>
 		</div>
-	
-	</div>
-	
+
+</div>
+				
+				
+				
+				
+				
+				
+				
+				
 	<!--errors page-->
 	
 	<div data-role="dialog" id="recordErrors">
@@ -249,86 +290,21 @@
 		</div>
 	</div>
 
+
+
+
+
+
 		
-		
-		
-		<!--old code
-		
-		
-		<div data-role="content">
-			<form action="#" method="post" id="profileForm" />
-				<ul id="errors"></ul>
-				<ul data-role="listview" data-filter="true"> 
-					<li data-role="list-divider">Friend Info</li>
-						<li>
-							<h3>Name<h3>
-							<input type="text" id="name" />
-						</li>	
-						<li>
-							<h3>Gender</h3>
-							<input type="radio" checked value="Female" id="female" name="gender" /><label for="female">Female</label>	
-							<input type="radio" value="Male" id="male" name="gender" /><label for="male">Male</label>
-							<input type="radio" value="Other" id="other" name="gender" /><label for="other">Other</label>
-							<input type="radio" value="None" id="none" name="gender" /><label for="none">None</label>
-						</li>
-						<li>
-							<h3>Date of Birth</h3>
-							<input type="date" id="born" />
-						</li>
-						<li id="planets">
-							<h3>Home Planet</h3>
-						</li>
-						<li id="allskills">
-							<h3>Skills</h3>
-						</li>
-					<li data-role="list-divider">Morality and Character</li>
-						<li>
-							<h3>Morality</h3>
-							<input type="range" id="morality" min="1" max="10" />
-						</li>
-						<li>
-							<h3>Character</h3>
-							<input type="range" id="character" min="1" max="10" />
-						</li>
-					<li data-role="list-divider">About Mate</li>
-						<li>
-							<h3>Bio</h3>
-							<textarea id="bio">Type your mate's bio here...</textarea>
-						</li>
-				</ul>
-			</div>
-		</form>
-			<div data-role="fieldcontain">
-				<h3><input type="submit" id="savedata" value="Save Mate" data-icon="plus" data-iconpos="right" /></h3>
-			</div>
-			<div data-role="fieldcontain">
-				<div class="ui-grid-a">
-					<div class="ui-block-a"><h3><input type="submit" id="cleardata" value="Clear Data" data-icon="delete" data-iconpos="right" /></h3></div>
-					<div class="ui-block-b" data-ajax="false"><h3><input type="submit" formaction="#displaymates" id="displaydata" value="Mates" data-icon="search" data-iconpos="right" /></h3></div>
-				</div>
-			</div>
-			<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
-				<div data-role="navbar">
-					<ul>
-						<li><a href="#home" data-icon="home">Home</a></li>
-						<li><a href="#addAMate" data-icon="plus" class="ui-btn-active" >Add A Mate</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 	
-	-->
-
-
-
 
 
 
 	<!-- JavaScript under here -->
 
-	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

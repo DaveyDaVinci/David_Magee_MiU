@@ -6,10 +6,36 @@ MiU 0612
 Project 3
 */
 //test
-
-var parseAddMateForm = function(data){
-	console.log(data);
+var parseMateData = function(data){
+	console.log(data);	
 };
+
+$(document).ready(function(){
+
+	var mateData = $('#addMateForm');
+
+	mateData.validate({
+		invalidHandler: function(form, validator){},
+		submitHandler: function(){
+			var data = mateData.serializeArray();
+			parseMateData(data);
+		}
+	});
+
+});
+
+
+/*
+$(document).ready( function(){
+	var amform = $('#addMateForm');
+	amform.validate();
+});
+*/
+/*
+var parseAddMateForm = function(data){
+	console.log(data)
+};
+
 
 $(document).bind('pageinit', function(){
 
@@ -24,7 +50,9 @@ $(document).bind('pageinit', function(){
 		submitHandler: function(){
 			var data = amform.serializeArray();
 			parseAddMateForm(data);
-		}
+		} 
 	});
 
 });
+
+*/
