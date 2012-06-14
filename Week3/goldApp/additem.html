@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- David Magee, VFW 0512-->
+<html>
+	<head> <!-- Meta tags-->
+    	<meta charset="utf-8" />
+    	<meta name="description" content="First document." />
+    	<meta name="keywords" content="mobile development" />
+    	<meta name="robots" content="index, follow" />
+    	<meta name="viewport" content="width=device-width" />
+    	<title> My First HTML Document </title>
+    	<link rel="stylesheet" href="style/style.css" />
+	</head>
+	<body>
+		<header> <!--Header with h1 -->
+			<h1>SciFi Your Mates</h1>
+		</header>
+		<form action="#" method="post" id="profileForm" /><!--Form -->
+			<fieldset><!--Fieldset -->
+				<legend>Mate's Info</legend><!--Legend -->
+					<ul id="errors"></ul>
+					<ul>
+						<li><label for="name">Name</label><input type="text" id="name" /></li> <!--Text field -->
+						<li>Gender
+							<ul> <!--Radio -->
+								<li><input type="radio" checked value="Female" id="female" name="gender" /><label for="female">Female</label></li>	
+								<li><input type="radio" value="Male" id="male" name="gender" /><label for="male">Male</label></li>
+								<li><input type="radio" value="Other" id="other" name="gender" /><label for="other">Other</label></li>
+								<li><input type="radio" value="None" id="none" name="gender" /><label for="none">None</label></li>
+							</ul>
+						</li>
+						<li><label for="born">Born</label><input type="date" id="born" /></li> <!--Date -->
+						<li id="planets">
+							<label for="homeplanet">Home Planet</label>
+						<!--	<select id="homeplanet">
+								<optgroup label="Allied Planets">
+									<option value="Mars">Mars</option>
+									<option value="Earth">Earth</option>
+									<option value="Pluto">Pluto</option>
+									<option value="Vegas">Vegas</option>
+								</optgroup>
+								<optgroup label="Relkin Group">
+									<option value="Turos">Turos</option>
+									<option value="Heisinkr">Heisinkr</option>
+									<option value="Velarius">Velarius</option>
+								</optgroup>
+							</select> -->
+						</li>
+						<li id="allskills">
+							<label for="skills">Skills</label>
+		<!--					<select id="skills">
+								<optgroup label="Fighting Skills">
+									<option value="Swordsman">Swordsman</option>
+									<option value="Smasher">Smasher</option>
+									<option value="Boxer" disabled="disabled">Boxer</option>
+								</optgroup>
+								<optgroup label="Shooting Skills">
+									<option value="Gunner">Gunner</option>
+									<option value="Sniper">Sniper</option>
+									<option value="Tank" disabled="disabled">Tank</option>
+								</optgroup>
+								<optgroup label="Thieving Skills">
+									<option value="Thief">Thief</option>
+									<option value="Charmer">Charmer</option>
+									<option value="Assassin" disabled="disabled">Assassin</option>
+								</optgroup>
+								<optgroup label="Sorcery Skills">
+									<option value="Mage">Mage</option>
+									<option value="Wizard">Wizard</option>
+									<option value="Shaman" disabled="disabled">Shaman</option>
+								</optgroup>
+								<optgroup label="Techster Skills">
+									<option value="Hacker">Hacker</option>
+									<option value="Biotic">Biotic</option>
+									<option value="Anarchist" disabled="disabled">Anarchist</option>
+								</optgroup>
+							</select> -->
+						</li>
+					</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Morality and Character</legend>
+					<ul><!--Range -->
+						<li><label for="morality">Morality</label><input type="range" id="morality" min="1" max="10" />
+						<li><label for="character">Character</label><input type="range" id="character" min="1" max="10" />
+					</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Biography</legend><!--Text Area -->
+					<li><label for="bio">Bio</label><textarea id="bio">Type your mate's bio here...</textarea></li>
+					<input type="hidden" value="true" />
+			</fieldset><!--Clear and Submit data -->
+			
+		</form>
+			<nav>
+				<a href="#"><input type="submit" id="savedata" value="Press Me" /></a>
+				<a href="#"><input type="submit" id="cleardata" value="Clear Data" /></a>
+				<a href="#"><input type="submit" id="displaydata" value="Display Data" /></a>
+				<a href="additem.html"><input type="submit" id="newdata" value="Add New Profile" style="display:none;"/></a>
+			</nav>
+		    	<script type="text/javascript" src="js/json.js"></script>
+		    	<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html> 

@@ -1,0 +1,310 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Sci-Fi Your Mates</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+	<!--Home Page-->
+	<div data-role="page" id="home">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
+		</div>
+		<div>
+			<center><h1><img src="img/centerStage.png" alt="Center Stage" height="175" width="300" /></h1></center>
+		</div>
+		<div data-role="content">
+			<p><a href="#addAMate" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="e">Add A Mate</a></p>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Browse</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Planet</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Skill</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Gender</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Morality</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>Browse By Character</h3>
+				</a></li>
+				<li data-role="list-divider">View Pics and Bios</li>
+				<li><a href="#viewplanets" data-icon="arrow-r" data-iconpos="right">
+					<h3>View Planets</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>View Skills</h3>
+				</a></li>
+				<li data-role="list-divider">Other Profile Options</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<h3>View Most Recent Logins</h3>
+				</a></li>
+			</ul>
+		</div>
+
+
+		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search" >View <br/>Planets</a></li>
+					<li><a href="#addAMate" data-icon="plus" >Add A Mate</a></li>
+					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze <br/>App</a></li>
+					<li><a href="https://github.com/DaveyDaVinci/David_Magee_MiU/tree/gh-pages/Week2" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!--View Planest Page Test--> 
+	<div data-role="page" id="viewplanets">
+		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
+			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
+			<center><h3>View Planets</h3></center>
+		</div>
+
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true" data-filter="true">
+				<li data-role="list-divider">Planets</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Pluto.png" />
+					<h3>Pluto</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Mars.png" />
+					<h3>Mars</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Earth.png" />
+					<h3>Earth</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Vegas.png" />
+					<h3>Vegas</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Velarius.png" />
+					<h3>Velarius</h3>
+				</a></li>
+				<li><a href="#viewplanets" data-icon="arrow-r" data-iconpos="right">
+					<img src="img/Heisinkr.png" />
+					<h3>Heisinkr</h3>
+				</a></li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+					<img src="img/Turos.png" />
+					<h3>Turos</h3>
+				</a></li>
+			</ul>
+		</div>
+
+
+		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search" class="ui-btn-active">View <br/>Planets</a></li>
+					<li><a href="#addAMate" data-icon="plus" >Add A Mate</a></li>
+					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze <br/>App</a></li>
+					<li><a href="https://github.com/DaveyDaVinci/David_Magee_MiU/tree/gh-pages/Week2" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<!--Add Item Page-->
+	<div data-role="page" id="addAMate">
+		<div data-role="header" data-theme="b" data-position="fixed">
+			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
+			<h3>Add A Mate</h3>
+		</div>
+		<div data-role="content">
+			<form action="" method="post" id="addMateForm">
+				
+				<div data-role="fieldcontain">
+					<input type="submit" value="Save Mate" data-theme="e" data-icon="plus" data-iconpos="right" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<center><h3>Friend Info</h3></center>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name" class="required" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<fieldset data-role="controlgroup" >
+							<legend>Gender:</legend>
+								<input type="radio" checked value="Female" id="female" name="gender" /><label for="female">Female</label>	
+								<input type="radio" value="Male" id="male" name="gender" /><label for="male">Male</label>
+								<input type="radio" value="Other" id="other" name="gender" /><label for="other">Other</label>
+								<input type="radio" value="None" id="none" name="gender" /><label for="none">None</label>						
+						</fieldset>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="born">Date Of Birth:</label>
+					<input type="text" name="born" id="born" placeholder="MM/DD/YY" class="required date" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="homePlanet" class="select">Home Planet:</label>
+   						<select name="homePlanet" id="homePlanet" data-native-menu="false" data-theme="a">
+     						<option data-placeholder="true">Choose A Planet</option>
+      						<optgroup label="Allied Planets">
+      							<option value="Earth">Earth</option>
+      							<option value="Mars">Mars</option>
+      							<option value="Pluto">Pluto</option>
+      							<option value="Vegas">Vegas</option>
+      						</optgroup>
+      						<optgroup label="Relkin Group">
+      							<option value="Heisinkr">Heisinkr</option>
+      							<option value="Turos">Turos</option>
+      							<option value="Velarius">Velarius</option>
+      						</optgroup>
+      					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="skills" class="select">Skill:</label>
+   						<select name="skills" id="skills" data-native-menu="false" data-theme="a">
+     						<option data-placeholder="true">Choose a Skill</option>
+     						<optgroup label="Fighting Skills">
+     							<option value="Swordsman">Swordsman</option>
+      							<option value="Smasher">Smasher</option>
+      							<option value="Boxer">Boxer</option>
+      						</optgroup>
+      						<optgroup label="Shooting Skills">
+      							<option value="Gunner">Gunner</option>
+      							<option value="Sniper">Sniper</option>
+      							<option value="Tank">Tank</option>
+      						</optgroup>
+      						<optgroup label="Thieving Skills">
+      							<option value="Thief">Thief</option>
+      							<option value="Charmer">Charmer</option>
+      							<option value="Assassin">Assassin</option>
+      						</optgroup>
+      						<optgroup label="Sorcery Skills">
+      							<option value="Mage">Mage</option>
+      							<option value="Wizard">Wizard</option>
+      							<option value="Shaman">Shaman</option>
+      						</optgroup>
+      						<optgroup label="Techster Skills">
+      							<option value="Hacker">Hacker</option>
+      							<option value="Biotic">Biotic</option>
+      							<option value="Anarchist">Anarchist</option>
+      						</optgroup>
+      					</select>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<center><h3>Morality and Character</h3></center>
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="morality">Morality:</label>
+					<input type="range" id="morality" min="1" max="10" value="5" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<label for="character">Character:</label>
+					<input type="range" id="character" min="1" max="10" value="5" />
+				</div>
+				
+				<div data-role="fieldcontain">
+					<center><h3>About Mate</h3></center>
+				</div>
+				
+				<div data-role="fieldcontain">
+						<label for="bio">Bio:</label>
+						<textarea name="bio" id="bio" placeholder="Enter your mate's info here..." class="required"></textarea>
+					</div>
+				
+				<div data-role="fieldcontain">
+					<input type="reset" value="Clear Data" data-theme="b" data-icon="delete" data-iconpos="right" />
+					<input type="submit" value="Save Mate" data-theme="e" data-icon="plus" data-iconpos="right" />
+				</div>
+				
+			</form>
+		</div>
+		
+		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" data-icon="home">Home</a></li>
+					<li><a href="#viewplanets" data-icon="search">View <br/>Planets</a></li>
+					<li><a href="#addAMate" data-icon="plus" class="ui-btn-active">Add A Mate</a></li>
+					<li><a href="http://daveydavinci.github.com/David_Magee_MiU/Week2/bronzeApp/index.html" data-icon="arrow-r" data-ajax="false">Bronze <br/>App</a></li>
+					<li><a href="https://github.com/DaveyDaVinci/David_Magee_MiU/tree/gh-pages/Week2" data-icon="arrow-r" data-ajax="false">gh-pages</a></li>
+				</ul>
+			</div>
+		</div>
+
+</div>
+				
+				
+				
+				
+				
+				
+				
+				
+	<!--errors page-->
+	
+	<div data-role="dialog" id="recordErrors">
+		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
+			
+			<center><h3>Missing Fields</h3></center>
+		</div>
+		
+		<div data-role="content">
+			<ul>
+				
+			</ul>
+		
+		</div>
+	</div>
+
+
+
+
+
+
+		
+	
+
+
+
+	<!-- JavaScript under here -->
+
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
