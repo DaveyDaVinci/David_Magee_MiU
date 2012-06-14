@@ -11,7 +11,7 @@ var parseAddMateForm = function(data){
 	console.log(data);
 };
 
-$(document).bind( function(){
+$(document).bind('pageinit', function(){
 
 	var amform = $('#addMateForm'),
 		amformErrorsLink = $('#amformErrorsLink')
