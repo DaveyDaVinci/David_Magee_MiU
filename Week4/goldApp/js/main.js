@@ -27,6 +27,8 @@ $(document).bind('pageinit', function(){
 });
 
 
+//test
+
 /*
 $(document).ready( function(){
 	var amform = $('#addMateForm');
