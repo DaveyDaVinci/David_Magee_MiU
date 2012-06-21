@@ -16,6 +16,8 @@
 
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
+	<link rel="stylesheet" href="themes/Magee1.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" />
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
@@ -25,8 +27,8 @@
 </head>
 <body>
 	<!--Home Page-->
-	<div data-role="page" id="home">
-		<div data-role="header" data-position="fixed" data-theme="b">
+	<div data-role="page" id="home" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a">
 			<center><img src="img/headlinePic.png" alt="Sci-Fi Your Mates" height="100" width="300" /></center>
 		</div>
 		<div>
@@ -36,7 +38,7 @@
 			<p><a href="#addAMate" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="e">Add A Mate</a></p>
 		</div>
 		<div data-role="content">
-			<ul data-role="listview" data-inset="true" data-filter="true">
+			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
 				<li data-role="list-divider">Browse</li>
 				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
 					<h3>Browse By Planet</h3>
@@ -82,7 +84,7 @@
 	</div>
 
 	<!--View Planest Page Test--> 
-	<div data-role="page" id="viewplanets">
+	<div data-role="page" id="viewplanets" data-theme="e">
 		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
 			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
 			<center><h3>View Planets</h3></center>
@@ -137,7 +139,7 @@
 	</div>
 	
 	<!--Add Item Page-->
-	<div data-role="page" id="addAMate">
+	<div data-role="page" id="addAMate" data-theme="a">
 		<div data-role="header" data-theme="b" data-position="fixed">
 			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
 			<h3>Add A Mate</h3>
@@ -177,7 +179,7 @@
 				 </div>
 
 				
-				<div data-role="fieldcontain">
+				<div data-role="fieldcontain" id="planets">
 					<label for="homePlanet" class="select">Home Planet:</label>
    						<select name="homePlanet" id="homePlanet" data-native-menu="false" data-theme="a">
      						<option data-placeholder="true">Choose A Planet</option>
@@ -195,7 +197,7 @@
       					</select>
 				</div>
 				
-				<div data-role="fieldcontain">
+				<div data-role="fieldcontain" id="allskills">
 					<label for="skills" class="select">Skill:</label>
    						<select name="skills" id="skills" data-native-menu="false" data-theme="a">
      						<option data-placeholder="true">Choose a Skill</option>
@@ -254,9 +256,10 @@
 					<input type="reset" value="Clear Data" data-theme="b" data-icon="delete" data-iconpos="right" />
 					<input type="submit" value="Save Mate" data-theme="e" data-icon="plus" data-iconpos="right" />
 				</div>
-				
+			
+			
 			</form>
-		</div>
+			
 		
 		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
 			<div data-role="navbar">
@@ -306,7 +309,7 @@
 
 
 	<!-- JavaScript under here -->
-
+	
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
