@@ -15,11 +15,11 @@
 	<meta http-equiv="cleartype" content="on">
 
 	<!-- StyleSheets under here -->
-	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
-	<link rel="stylesheet" href="themes/Magee1.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="themes/Magee1.min.css" />
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile.structure-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -35,7 +35,7 @@
 			<center><h1><img src="img/centerStage.png" alt="Center Stage" height="175" width="300" /></h1></center>
 		</div>
 		<div data-role="content">
-			<p><a href="#addAMate" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="e">Add A Mate</a></p>
+			<p><a href="#addAMate" data-role="button" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">Add A Mate</a></p>
 		</div>
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true" data-filter="true" data-theme="a">
@@ -62,15 +62,15 @@
 				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
 					<h3>View Skills</h3>
 				</a></li>
-				<li data-role="list-divider">Other Profile Options</li>
-				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false">
+				<li data-role="list-divider" data-theme="a">Other Profile Options</li>
+				<li><a href="underConstruction.html" data-icon="arrow-r" data-iconpos="right" data-ajax="false" data-theme="a">
 					<h3>View Most Recent Logins</h3>
 				</a></li>
 			</ul>
 		</div>
 
 
-		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+		<div data-role="footer" data-theme="a" data-position="fixed" data-id="freeze">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
@@ -84,8 +84,8 @@
 	</div>
 
 	<!--View Planest Page Test--> 
-	<div data-role="page" id="viewplanets" data-theme="e">
-		<div data-role="header" data-position="fixed" data-theme="b" data-add-back-btn="true">
+	<div data-role="page" id="viewplanets" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a" data-add-back-btn="true">
 			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
 			<center><h3>View Planets</h3></center>
 		</div>
@@ -125,7 +125,7 @@
 		</div>
 
 
-		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+		<div data-role="footer" data-theme="a" data-position="fixed" data-id="freeze">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
@@ -140,7 +140,7 @@
 	
 	<!--Add Item Page-->
 	<div data-role="page" id="addAMate" data-theme="a">
-		<div data-role="header" data-theme="b" data-position="fixed">
+		<div data-role="header" data-theme="a" data-position="fixed">
 			<center><img src="img/headlinePic2.png" alt="Sci-Fi Your Mates" width="300" /></center>
 			<h3>Add A Mate</h3>
 		</div>
@@ -253,15 +253,15 @@
 					</div>
 				
 				<div data-role="fieldcontain">
-					<input type="reset" value="Clear Data" data-theme="b" data-icon="delete" data-iconpos="right" />
-					<input type="submit" value="Save Mate" data-theme="e" data-icon="plus" data-iconpos="right" />
+					<input type="reset" value="Clear Data" data-theme="c" data-icon="delete" data-iconpos="right" />
+					<input type="submit" value="Save Mate" data-theme="a" data-icon="plus" data-iconpos="right" />
 				</div>
 			
 			
 			</form>
 			
 		
-		<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+		<div data-role="footer" data-theme="a" data-position="fixed" data-id="freeze">
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#home" data-icon="home">Home</a></li>
