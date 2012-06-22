@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <!-- David Magee, VFW 0512-->
 <html>
@@ -101,3 +102,100 @@
 		    	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html> 
+=======
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Sci-Fi Your Mates</title>
+
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" type="text/css" href="http://dev.jtsage.com/cdn/datebox/latest/jqm-datebox.min.css" /> 
+	<link rel="stylesheet" href="themes/SciFiYourMate1.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+</head>
+<body>
+<!--Add Item Page-->
+	<div data-role="page" id="addAMate" data-add-back-btn="true">
+		<div data-role="header" data-theme="e" data-position="fixed">
+			<h1>Add A Mate</h1>
+		</div>
+		<div data-role="content">
+			<form action="#" method="post" id="profileForm" />
+				<ul id="errors"></ul>
+				<ul data-role="listview" data-filter="true"> 
+					<li data-role="list-divider">Friend Info</li>
+						<li>
+							<h3>Name<h3>
+							<input type="text" id="name" />
+						</li>	
+						<li>
+							<h3>Gender</h3>
+							<input type="radio" checked value="Female" id="female" name="gender" /><label for="female">Female</label>	
+							<input type="radio" value="Male" id="male" name="gender" /><label for="male">Male</label>
+							<input type="radio" value="Other" id="other" name="gender" /><label for="other">Other</label>
+							<input type="radio" value="None" id="none" name="gender" /><label for="none">None</label>
+						</li>
+						<li>
+							<h3>Date of Birth</h3>
+							<input type="date" id="born" />
+						</li>
+						<li id="planets">
+							<h3>Home Planet</h3>
+						</li>
+						<li id="allskills">
+							<h3>Skills</h3>
+						</li>
+					<li data-role="list-divider">Morality and Character</li>
+						<li>
+							<h3>Morality</h3>
+							<input type="range" id="morality" min="1" max="10" />
+						</li>
+						<li>
+							<h3>Character</h3>
+							<input type="range" id="character" min="1" max="10" />
+						</li>
+					<li data-role="list-divider">About Mate</li>
+						<li>
+							<h3>Bio</h3>
+							<textarea id="bio">Type your mate's bio here...</textarea>
+						</li>
+				</ul>
+			</div>
+		</form>
+			<div data-role="fieldcontain">
+				<h3><input type="submit" id="savedata" value="Save Mate" data-icon="plus" data-iconpos="right" /></h3>
+			</div>
+			<div data-role="fieldcontain">
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><h3><input type="submit" id="cleardata" value="Clear Data" data-icon="delete" data-iconpos="right" /></h3></div>
+					<div class="ui-block-b" data-ajax="false"><h3><input type="submit" formaction="#displaymates" id="displaydata" value="Mates" data-icon="search" data-iconpos="right" /></h3></div>
+				</div>
+			</div>
+			<div data-role="footer" data-theme="e" data-position="fixed" data-id="freeze">
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#home" data-icon="home">Home</a></li>
+						<li><a href="#addAMate" data-icon="plus" class="ui-btn-active" >Add A Mate</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	</body>
+>>>>>>> origin/gh-pages
